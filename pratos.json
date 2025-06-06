@@ -1,0 +1,80 @@
+[
+  {
+    "nome": "Calulu",
+    "descricao": "Ensopado preparado com peixe ou carne seca, quiabo, berinjela, folhas locais e azeite de palma.",
+    "imagem_url": "https://example.com/imagens/calulu.jpg",
+    "ingredientes": [
+      "Peixe seco",
+      "Quiabo",
+      "Berinjela",
+      "Folhas locais",
+      "Azeite de palma"
+    ]
+  },
+  {
+    "nome": "Feijoada à Moda da Terra",
+    "descricao": "Feijoada feita com peixe seco ou defumado, azeite de palma e folhas de micocó.",
+    "imagem_url": "https://example.com/imagens/feijoada.jpg",
+    "ingredientes": [
+      "Peixe seco",
+      "Feijão",
+      "Folhas de micocó",
+      "Azeite de palma"
+    ]
+  },
+  {
+    "nome": "Izaquente",
+    "descricao": "Papa feita a partir de um fruto local, podendo ser doce ou salgada.",
+    "imagem_url": "https://example.com/imagens/izaquente.jpg",
+    "ingredientes": [
+      "Fruto local"
+    ]
+  },
+  {
+    "nome": "Lussua",
+    "descricao": "Molho preparado com folhas endêmicas da região, semelhante ao espinafre.",
+    "imagem_url": "https://example.com/imagens/lussua.jpg",
+    "ingredientes": [
+      "Folhas locais",
+      "Azeite de palma"
+    ]
+  },
+  {
+    "nome": "Molho no Fogo",
+    "descricao": "Prato típico da ilha do Príncipe, semelhante ao calulu, mas mais seco.",
+    "imagem_url": "https://example.com/imagens/molho_no_fogo.jpg",
+    "ingredientes": [
+      "Peixe seco",
+      "Berinjela",
+      "Folhas locais",
+      "Azeite de palma"
+    ]
+  },
+  {
+    "nome": "Broa",
+    "descricao": "Pão feito de farinha de milho, muito consumido no país.",
+    "imagem_url": "https://example.com/imagens/broa.jpg",
+    "ingredientes": [
+      "Farinha de milho"
+    ]
+  },
+  {
+    "nome": "Cachupa",
+    "descricao": "Prato preparado com vagem, fava e milho, refletindo influências cabo-verdianas.",
+    "imagem_url": "https://example.com/imagens/cachupa.jpg",
+    "ingredientes": [
+      "Vagem",
+      "Fava",
+      "Milho"
+    ]
+  },
+  {
+    "nome": "Fruta-pão com Peixe Salgado",
+    "descricao": "Fruta-pão servida com peixe salgado.",
+    "imagem_url": "https://example.com/imagens/fruta_pao_peixe.jpg",
+    "ingredientes": [
+      "Fruta-pão",
+      "Peixe salgado"
+    ]
+  }
+]

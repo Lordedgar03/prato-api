@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Envio de Prato com Imagem</title>
+</head>
+<body>
+  <h2>Formulário para inserir prato típico</h2>
+  <form id="form-prato" enctype="multipart/form-data">
+    <label>Nome do prato:</label><br>
+    <input type="text" name="nome" required><br><br>
+
+    <label>Descrição:</label><br>
+    <textarea name="descricao" rows="3" required></textarea><br><br>
+
+    <label>Imagem:</label><br>
+    <input type="file" name="imagem" accept="image/*" required><br><br>
+
+    <label>Ingredientes (separados por vírgula):</label><br>
+    <input type="text" name="ingredientes" placeholder="ex: arroz, feijão, peixe"><br><br>
+
+    <button type="submit">Enviar Prato</button>
+  </form>
+
+  <p id="resposta"></p>
+
+  <script>
+    document.getElementById('form-prato').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const form = new FormData(this);
+      const ingredientes = form.get('ingredientes').split(',').map(i => i.trim());
+      form.set('ingredientes', JSON.stringify(ingredientes));
+
+      const resposta = await fetch('http://localhost:3000/api/pratos', {
+        method: 'POST',
+        body: form
+      });
+
+      const resultado = await resposta.json();
+      document.getElementById('resposta').innerText = JSON.stringify(resultado, null, 2);
+    });
+  </script>
+</body>
+</html>
