@@ -41,12 +41,14 @@ exports.createPrato = async (req, res) => {
 // Obter todos os pratos
 exports.getAllPratos = async (req, res) => {
   try {
-    const snapshot = await db.collection("pratos").get();
-    const pratos = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-    res.json(pratos);
-  } catch (error) {
-    res.status(500).json({ error: "Erro ao buscar pratos." });
-  }
+  const snapshot = await db.collection('pratos').get();
+  const pratos = snapshot.docs.map(doc => doc.data());
+  res.json(pratos);
+} catch (error) {
+  console.error("Erro ao buscar pratos:", error);
+  res.status(500).json({ error: 'Erro ao buscar pratos.' });
+}
+
 };
 
 // Obter prato por nome
