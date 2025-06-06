@@ -3,7 +3,7 @@ const path = require("path");
 const pratos = require("../pratos.json");
 const ingredientes = require("../ingredientes.json");
 
-const serviceAccount = require("../firebaseKey.json");
+//const serviceAccount = require("../firebaseKey.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
